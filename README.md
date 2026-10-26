@@ -32,3 +32,20 @@ The assessment focused on identifying cross-site scripting (XSS), investigating 
 2. Tested relevant inputs and requests to investigate the identified issues.
 3. Analysed the potential impact of each finding.
 4. Documented findings and recommended security mitigations.
+
+## Key Findings and Remediation
+
+### 1. Cross-Site Scripting (XSS)
+- **Finding:** Investigated reflected and stored XSS in user input fields.
+- **Impact:** Potential execution of injected scripts in users' browsers.
+- **Mitigation:** Apply output encoding, appropriate input validation, and Content Security Policy (CSP).
+
+### 2. Broken Access Control
+- **Finding:** Identified unauthorised file access by modifying a department identifier in a request.
+- **Impact:** Exposure of files belonging to another department.
+- **Mitigation:** Enforce server-side authorisation checks and least-privilege access.
+
+### 3. Database Information Disclosure
+- **Finding:** Analysed how aggregate query results could reveal sensitive information.
+- **Impact:** Potential inference of confidential data.
+- **Mitigation:** Restrict data access and apply appropriate privacy controls.
