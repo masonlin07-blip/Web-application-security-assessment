@@ -28,6 +28,10 @@ Security assessment of a web application as part of university cybersecurity cou
 ## Evidence
 Screenshots are provided in the `screenshots/` directory to demonstrate selected test results
 
+## Detailed Findings
+
+See [FINDINGS.md](FINDINGS.md) for testing methods, observed results, potential impacts, and recommended mitigations
+
 ## Key Takeaways
 Developed practical experience in web application security testing, vulnerability analysis, HTTP request inspection, and remediation recommendations
 
