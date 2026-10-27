@@ -2,33 +2,33 @@
 # Web Application Security Assessment
 
 Security assessment of a web application as part of university cybersecurity coursework.
-
-(Disclaimer both projects were simulated environments, any private information is fiction)
+(Disclaimer project was a simulated environment, all private information is fictional)
 
 ## Objectives
-- Identify reflected and stored cross-site scripting (XSS).
-- Investigate access-control weaknesses and data exposure.
-- Analyse database security risks and recommend mitigations.
+- Test for reflected and stored cross-site scripting (XSS).
+- Investigate broken access control and unauthorised data exposure.
+- Document vulnerabilities and recommend security mitigations.
 
 ## Tools
 - **Burp Suite** — Intercepting and modifying HTTP requests.
-- **Browser tools** — Testing application behaviour.
+- **Browser developer tools** — Inspecting application behaviour.
 
 ## Key Findings
 
-### Cross-Site Scripting (XSS)
-- Investigated reflected and stored XSS in user input fields.
-- **Mitigation:** Output encoding and appropriate input validation.
+### 1. Cross-Site Scripting (XSS)
+- Tested reflected XSS on a login page and stored XSS in a chat application.
+- Observed JavaScript execution through browser alert pop-ups.
+- **Mitigation:** Apply context-aware output encoding and appropriate input validation.
 
-### Broken Access Control
-- Identified unauthorised access to another department's files by modifying a request parameter.
-- **Mitigation:** Server-side authorisation checks and least-privilege access.
+### 2. Broken Access Control
+- Modified a request parameter to access files belonging to another department.
+- Demonstrated that the application did not adequately enforce server-side authorisation.
+- **Mitigation:** Enforce server-side access checks on every request and apply least-privilege principles.
 
-### Database Information Disclosure
-- Analysed how aggregate query results could reveal sensitive information.
-- **Mitigation:** Restrict data access and apply privacy controls.
+## Evidence
+Screenshots are provided in the `screenshots/` directory to demonstrate selected test results.
 
 ## Key Takeaways
-Gained practical experience in web application security testing, vulnerability analysis, and documenting remediation recommendations.
+Developed practical experience in web application security testing, vulnerability analysis, HTTP request inspection, and remediation recommendations.
 
 
