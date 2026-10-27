@@ -3,6 +3,8 @@
 
 Security assessment of a web application as part of university cybersecurity coursework.
 
+(Disclaimer both projects were simulated environments, any private information is fiction)
+
 ## Objectives
 - Identify reflected and stored cross-site scripting (XSS).
 - Investigate access-control weaknesses and data exposure.
